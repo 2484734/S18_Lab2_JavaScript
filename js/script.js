@@ -47,6 +47,13 @@ function exemple2()
 function exemple3()
 {	
 	retirerLesClasses();
+
+	let lesCartes = document.getElementsByTagName("li");
+
+	for(let i = 0; i < lesCartes.length; i++){
+		lesCartes[i].className = "coeur"+(i+8);
+	}
+
 }
 
 //=================================================================
