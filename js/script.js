@@ -143,6 +143,15 @@ function exemple9()
 function exemple10()
 {   
 	retirerLesClasses();
+
+	let lesCartes = document.getElementsByTagName("li");
+
+
+	for(let i = 0; i < lesCartes.length; i++){
+		let sorteHasard = tabSortes[randNumber(4)];
+
+		lesCartes[i].className = sorteHasard+(randNumber(13)+1);
+	}
 }
 
 
