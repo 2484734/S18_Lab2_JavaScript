@@ -126,6 +126,17 @@ function exemple8()
 function exemple9()
 {   
 	retirerLesClasses();
+
+	let lesCartes = document.getElementsByTagName("li");
+
+	let sorteHasard = tabSortes[randNumber(4)];
+
+	let numeroHasard = randNumber(8)+1;
+
+	for(let i = 0; i < lesCartes.length; i++){
+		lesCartes[0].className = sorteHasard+numeroHasard; 
+		lesCartes[i].className = "pique"+(numeroHasard + i); 
+	}
 }
 
 //=================================================================
