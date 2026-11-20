@@ -63,7 +63,7 @@ function exemple4()
 
 	let lesCartes = document.getElementsByTagName("li");
 
-		for(let i = 0; i < lesCartes.length; i++){
+	for(let i = 0; i < lesCartes.length; i++){
 		lesCartes[i].className = "carreau"+(6-i);
 	}
 }
@@ -72,6 +72,13 @@ function exemple4()
 function exemple5()
 {   
 	retirerLesClasses();
+
+	let lesCartes = document.getElementsByTagName("li");
+	for(let i = 0; i < lesCartes.length; i++){
+		lesCartes[i].className = "trefle"+(i*2+1);
+
+	}
+
 }
 //=================================================================
 function exemple6()
