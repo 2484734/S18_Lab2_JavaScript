@@ -114,6 +114,12 @@ function exemple7()
 function exemple8()
 {   
 	retirerLesClasses();
+
+	let lesCartes = document.getElementsByTagName("li");
+
+	for(let i = 0; i < lesCartes.length; i++){
+		lesCartes[i].className = "carreau"+(randNumber(13)+1);
+	}
 }
 
 //=================================================================
