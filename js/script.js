@@ -60,6 +60,12 @@ function exemple3()
 function exemple4()
 { 	
 	retirerLesClasses();
+
+	let lesCartes = document.getElementsByTagName("li");
+
+		for(let i = 0; i < lesCartes.length; i++){
+		lesCartes[i].className = "carreau"+(6-i);
+	}
 }
 
 //=================================================================
