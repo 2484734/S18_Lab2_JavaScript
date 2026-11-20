@@ -84,6 +84,13 @@ function exemple5()
 function exemple6()
 {   
 	retirerLesClasses();
+
+	let lesCartes = document.getElementsByTagName("li");
+
+	for(let i = 0; i < lesCartes.length; i++){
+		lesCartes[i].className = "carreau"+((i%3)+1);
+	}
+
 }
 
 //=================================================================
